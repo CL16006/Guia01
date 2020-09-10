@@ -27,3 +27,19 @@ def piramide():
     print('Bloques sobrantes', sobrantes)
 
 #piramide()
+def primo():
+    numero = int(input("Ingrese numero entero: "))
+    x = 1
+    contador = 0
+    if (numero == 1):
+        print('El numero',numero,'no es primo')
+    else:
+        while x <= numero:
+            if numero % x == 0:
+                contador += 1
+            x += 1
+        if contador == 2:
+            print('El numero',numero,'es primo')
+        else:
+            print('El numero',numero,'no es primo')
+#primo()
